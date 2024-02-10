@@ -9,6 +9,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
      /* Typewriter Styles */
      .typewriter h1 {
+        font-size: 3vw;
       color: #643434;
       font-family: monospace;
       overflow: hidden;
@@ -21,6 +22,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     }
 
     .typewriter p {
+        font-size: 2vw;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
         border-right: .15em solid orange; /* The typwriter cursor */
         white-space: nowrap; /* Keeps the content on a single line */
