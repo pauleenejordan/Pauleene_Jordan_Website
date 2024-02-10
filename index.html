@@ -7,19 +7,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #ffe6e6;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
 <body class="w3-white">
-
+  <script src="script.js"></script>
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -56,14 +47,32 @@
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Pauleene Jordan.</h1>
-      <p>an aspiring Software Engineer who writes code and travel for fun</p>
+    <div class="typewriter">
+      <h1> My name is Pauleene Jordan.</h1>
+    </div>
+    
+    <div class="typewriter">
+      <p>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to my website. ", "I am a Software Engineer.", "I love to develop and design code.", "And (of course) I love the color pink." ]'>
+          <span class="wrap"></span>
+        </a>
+      </p>
+    </div>
+      
     <img src="me.jpeg" alt="boy" class="w3-image" width="992" height="1108">
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> My Life</h1>
+    <div class ="typewriter">
+      <h1>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Fun facts about me!" ]'>
+          <span class="wrap"></span>
+        </a>
+      </h1>
+    </div>
+    </div>
+    <div class="w3-content w3-justify w3-text-black w3-padding-64"> 
     <hr style="width:300px" class="w3-opacity">
       
     <img src="first.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:200px">
