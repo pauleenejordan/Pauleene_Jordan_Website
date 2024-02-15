@@ -16,6 +16,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 		.typewriter h1 {
 			font-size: 0.5vw;
 		}
+		.typewriter h2 {
+			font-size: 1em; /* Adjust the font size for h2 on mobile */
+		  }
 	  
 		.typewriter p {
 		  animation: typing 7s steps(40, end), blink-caret .75s step-end infinite;
@@ -34,6 +37,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       animation: typing 3.5s steps(30, end), 
       blink-caret .5s linear infinite;
     }
+	.typewriter h2 {
+		font-size: 2em; /* Adjust the font size for h2 on desktop */
+	  }
 
     .typewriter p {
         color: #865959;
