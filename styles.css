@@ -17,7 +17,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 			font-size: 0.5vw;
 		}
 		.typewriter h2 {
-			font-size: 1em; /* Adjust the font size for h2 on mobile */
+			font-size: 0.5em; /* Adjust the font size for h2 on mobile */
 		  }
 	  
 		.typewriter p {
