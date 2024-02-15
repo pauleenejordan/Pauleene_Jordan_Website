@@ -12,10 +12,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           margin-bottom: 0; 
         }
       } */
-
+	  @media only screen and (max-width: 600px) {
+		.typewriter h1 {
+			font-size: 0.5vw;
+		}
+	  
+		.typewriter p {
+		  animation: typing 7s steps(40, end), blink-caret .75s step-end infinite;
+		}
+	  }
      /* Typewriter Styles */
      .typewriter h1 {
-        font-size: 3vw;
+      font-size: 3vw;
       color: #966e6e;
       font-family: monospace;
       overflow: hidden;
