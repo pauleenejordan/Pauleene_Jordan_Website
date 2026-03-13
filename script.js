@@ -23,6 +23,127 @@ function updateLockscreenTime() {
     document.getElementById('lockscreen-date').textContent = `${dayName}, ${monthName} ${date}`;
 }
 
+const canvas = document.getElementById("snakeCanvas");
+
+if(canvas){
+
+const ctx = canvas.getContext("2d");
+const box = 20;
+
+let snake;
+let food;
+let direction;
+let score;
+let game;
+
+function initializeGame(){
+
+snake=[{x:200,y:200}];
+direction="RIGHT";
+score=0;
+
+document.getElementById("score").innerText=score;
+
+food={
+x:Math.floor(Math.random()*20)*box,
+y:Math.floor(Math.random()*20)*box
+};
+
+}
+
+document.addEventListener("keydown",changeDirection);
+
+function changeDirection(event){
+
+if(event.key==="ArrowLeft" && direction!=="RIGHT") direction="LEFT";
+else if(event.key==="ArrowUp" && direction!=="DOWN") direction="UP";
+else if(event.key==="ArrowRight" && direction!=="LEFT") direction="RIGHT";
+else if(event.key==="ArrowDown" && direction!=="UP") direction="DOWN";
+
+}
+
+function draw(){
+
+ctx.fillStyle="#ffeef6";
+ctx.fillRect(0,0,400,400);
+
+for(let i=0;i<snake.length;i++){
+
+ctx.fillStyle=i===0 ? "#ff1493":"#ff85c1";
+ctx.fillRect(snake[i].x,snake[i].y,box,box);
+
+}
+
+ctx.fillStyle="#ff3b6f";
+ctx.fillRect(food.x,food.y,box,box);
+
+let headX=snake[0].x;
+let headY=snake[0].y;
+
+if(direction==="LEFT") headX-=box;
+if(direction==="UP") headY-=box;
+if(direction==="RIGHT") headX+=box;
+if(direction==="DOWN") headY+=box;
+
+if(headX===food.x && headY===food.y){
+
+score++;
+document.getElementById("score").innerText=score;
+
+food={
+x:Math.floor(Math.random()*20)*box,
+y:Math.floor(Math.random()*20)*box
+};
+
+}else{
+
+snake.pop();
+
+}
+
+const newHead={x:headX,y:headY};
+
+if(
+headX<0 || headY<0 ||
+headX>=400 || headY>=400 ||
+snake.some(s=>s.x===headX && s.y===headY)
+){
+
+clearInterval(game);
+document.getElementById("gameOverOverlay").style.display="flex";
+return;
+
+}
+
+snake.unshift(newHead);
+
+}
+
+function startGame(){
+
+clearInterval(game);
+initializeGame();
+
+document.getElementById("gameOverOverlay").style.display="none";
+
+game=setInterval(draw,120);
+
+}
+
+function restartGame(){
+
+clearInterval(game);
+initializeGame();
+
+document.getElementById("gameOverOverlay").style.display="none";
+
+game=setInterval(draw,120);
+
+}
+
+initializeGame();
+
+}
 // App Navigation
 function showApp(appName) {
     // Hide home screen
