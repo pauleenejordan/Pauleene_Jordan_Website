@@ -1,243 +1,509 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Pauleene Jordan</title>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pauleene Jordan - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
-<body class="w3-white">
-  <script src="script.js"></script>
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="name.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>EXPERIENCE</p>
-  </a>
-  <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>PROJECT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
-    <a href="#project" class="w3-bar-item w3-button" style="width:25% !important">PROJECT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-white" id="home" style="margin-bottom: 40px;">
-    <div class="typewriter">
-      <h1> My name is Pauleene Jordan.</h1>
-    </div>
-    
-    <div class="typewriter">
-      <p>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to my website. ", "I am a Software Engineer.", "I love to develop and design code.", "And (of course) I love the color pink." ]'>
-          <span class="wrap"></span>
-        </a>
-      </p>
-    </div>
-      
-    <img src="me.jpeg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
-
-  <!-- About Section -->
-    <br>
-    <br>
-
-  <div class="w3-container w3-padding-32 w3-center w3-white" id ="about" style="margin-bottom: 50px;" > 
-    <div class ="typewriter">
-      <h2>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "This is the beginning of my voyage.", "Let us start..." ]'>
-          <span class="wrap"></span>
-        </a>
-      </h2>
-    </div>
-    <br>
-    <div class="container">
-      <ul id="cards">
-          <li class="card" id="card1">
-              <div class="card-body">
-                <div class="left-side">
-                  <img src="first.jpg" alt="Image description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Lockscreen -->
+    <div class="lockscreen" id="lockscreen">
+        <!-- Animated Background with Clouds and Rain -->
+        <div class="lockscreen-bg">
+            <div class="weather-container">
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+                <div class="cloud cloud3"></div>
+                <div class="rain-container">
+                    <div class="rain"></div>
                 </div>
-                <div class="right-side">
-                  <div class="right-side-content"> <!-- Added this div with the new class -->
-                    <h2>Philippines</h2>
-                    <p>I grew up in a small town in the Philippines called Tarlac, which is a vibrant and diverse city located in the 
-                      center of the country. Most people there speak two dialects. This is where I learned how to speak my 
-                      native language Tagalog and my other dialect Kapampangan.</p>
-                  </div>
-                </div>
-              </div>
-          </li>
-          <li class="card" id="card2">
-            <div class="card-body">
-              <div class="left-side">
-                <img src="second.jpg" alt="Image description">
-              </div>
-              <div class="right-side">
-                <div class="right-side-content"> <!-- Added this div with the new class -->
-                  <h2>Moved to USA</h2>
-                  <p>Then, when I was 17, my family decided to migrate in the US. We lived in a peaceful rural town in New Hampshire called Meredith for 6 months. 
-                    The town is very different from the farm-type of city I grew up in. 
-                    Meredith looks like it came straight out of painting during fall season and has 
-                    so many fun activities in the Winter once the lake turns into ice.</p>
-                </div>
-              </div>
             </div>
-          </li>
-          <li class="card" id="card3">
-            <div class="card-body">
-              <div class="left-side">
-                <img src="third.jpg" alt="Image description">
-              </div>
-              <div class="right-side">
-                <div class="right-side-content"> <!-- Added this div with the new class -->
-                  <h2>New Jersey</h2>
-                  <p>After few months, we moved to a new state, New Jersey. I love New Jersey. 
-                    In some ways, the state has resemblance to my old country. 
-                    There are some Filipino restaurants that serves authentic dishes that reminds me of my grandma's cooking. </p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="card" id="card4">
-            <div class="card-body">
-              <div class="left-side">
-                <img src="fourth.jpg" alt="Image description">
-              </div>
-              <div class="right-side">
-                <div class="right-side-content"> <!-- Added this div with the new class -->
-                  <h2>The beginning of my journey</h2>
-                  <p>In 12th grade, I decided to take AP Computer Science. I love logic and technology so it was no surprise that I fell in love with the class. 
-                    In that same year, I decided to take Computer Engineering and minor in Computer Science on Rutgers University.</p>
-                </div>
-              </div>
-            </div>
-          </li>
-      </ul>
-  </div>
-  <!-- End About Section -->
-  
-  <!-- Experience Section -->
-  <div class="w3-container w3-padding-32 w3-center w3-white" id="photos" style="margin-bottom: 50px;">
-    <div class="typewriter">
-      <h2>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "My journey as a Software Engineer", "My journey as a Software Engineer" ]'>
-          <span class="wrap"></span>
-        </a>
-      </h2>
-    </div>
-    <br>
-    <br>
+        </div>
 
-      <img class="w3-image" src="1.png" alt="Architecture" width="1000" height="500" class ="center" align = "center"> 
-      <img class="w3-image" src="2.png" alt="Architecture" width="1000" height="500" class ="center"align = "center"> 
-      <img class="w3-image" src="3.png" alt="Architecture" width="1000" height="500" class ="center" align = "center"> 
+        <!-- Digital Time Display -->
+        <div class="lockscreen-time">
+            <div class="digital-time" id="lockscreen-time">09:41</div>
+            <div class="digital-date" id="lockscreen-date">Wednesday, March 12</div>
+        </div>
 
-      
-      
+        <!-- Login Button -->
+        <button class="login-btn" onclick="unlockScreen()">
+            <span>Login</span>
+            <i class="fas fa-arrow-right"></i>
+        </button>
     </div>
 
+    <!-- Desktop with Apps -->
+    <div class="desktop" id="desktop">
+        <!-- Cityscape Background -->
+        <div class="cityscape">
+            <!-- Buildings -->
+            <div class="building building1"></div>
+            <div class="building building2"></div>
+            <div class="building building3"></div>
+            <div class="building building4"></div>
+            <div class="building building5"></div>
+            <div class="building building6"></div>
+            
+            <!-- Road -->
+            <div class="road">
+                <!-- Driving Car -->
+                <div class="car">
+                    <div class="car-body"></div>
+                    <div class="car-window"></div>
+                    <div class="car-wheel car-wheel-front"></div>
+                    <div class="car-wheel car-wheel-back"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Bubbles -->
+        <div class="bubble bubble1"></div>
+        <div class="bubble bubble2"></div>
+        <div class="bubble bubble3"></div>
+        <div class="bubble bubble4"></div>
+        <div class="bubble bubble5"></div>
+        <div class="bubble bubble6"></div>
+        <div class="bubble bubble7"></div>
+        <div class="bubble bubble8"></div>
 
-  <!-- Project Section -->
-  <div class="w3-padding-64 w3-content w3-text-black" id="project" style="margin-bottom: 40px;">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Project </h1>
-    <hr style="width:200px" class="w3-opacity">
-      
-      <img class="w3-image" src="Chess.jpeg" alt="Architecture" width="1000" height="500" class ="center" align = "center"> 
-      <img class="w3-image" src="how_chess.png" alt="Architecture" width="1000" height="500" class ="center" align = "center"> 
-      <form action="https://github.com/pauleenejordan/ChessGame">
-    <input class="w3-button w3-light-grey w3-padding-large w3-section center"  style="width:50%" type="submit" value="Chess Repo" />
-</form>
-      
-      <br> <br>
-      
-      <img class="w3-image" src="photoablum.png" alt="Architecture" width="1000" height="500" class ="center" align = "center"> 
-      <img class="w3-image" src="photo.png" alt="Architecture" width="1000" height="500" class ="center" align = "center"> 
-      <form action="https://github.com/pauleenejordan/Android--Photo-Albums">
-    <input class="w3-button w3-light-grey w3-padding-large w3-section center"  style="width:50%" type="submit" value="Photo Album Repo" />
-</form>
-      
-      <br> <br>
-      
-      <img class="w3-image" src="song.png" alt="Architecture" width="1000" height="500" class ="center" align = "center"> 
-      <img class="w3-image" src="lib.png" alt="Architecture" width="1000" height="500" class ="center" align = "center"> 
-      <form action="https://github.com/pauleenejordan/SongLibrary">
-    <input class="w3-button w3-light-grey w3-padding-large w3-section center"  style="width:50%" type="submit" value="Song Library Repo" />
-</form>
-      
-      
-      <!-- Download Button Section -->
-      
-      
+        <!-- Start Menu Button -->
+        <div class="start-menu-btn" onclick="toggleStartMenu()">
+            <img src="name.png" alt="Start">
+        </div>
 
-</div>
+        <!-- Start Menu Popup -->
+        <div class="start-menu" id="start-menu">
+            <div class="start-menu-header">
+                <h2>Apps</h2>
+            </div>
+            <div class="apps-list">
+                <div class="app-item" onclick="showApp('workedin'); closeStartMenu()">
+                    <i class="fas fa-user-circle"></i>
+                    <span>WorkedIn</span>
+                </div>
+                <div class="app-item" onclick="showApp('picstagram'); closeStartMenu()">
+                    <i class="fas fa-images"></i>
+                    <span>Picstagram</span>
+                </div>
+                <div class="app-item" onclick="showApp('codehub'); closeStartMenu()">
+                    <i class="fas fa-code"></i>
+                    <span>CodeHub</span>
+                </div>
+                <div class="app-item" onclick="showApp('contact'); closeStartMenu()">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </div>
+            </div>
+        </div>
 
+        <!-- Search Bar -->
+        <div class="search-bar-container">
+            <div class="search-bar" onclick="toggleSearchResults()">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search apps..." id="search-input">
+            </div>
+            <!-- Search Results -->
+            <div class="search-results" id="search-results" style="display: none;">
+                <div class="app-item" onclick="showApp('workedin'); closeSearch()">
+                    <i class="fas fa-user-circle"></i>
+                    <span>WorkedIn</span>
+                </div>
+                <div class="app-item" onclick="showApp('picstagram'); closeSearch()">
+                    <i class="fas fa-images"></i>
+                    <span>Picstagram</span>
+                </div>
+                <div class="app-item" onclick="showApp('codehub'); closeSearch()">
+                    <i class="fas fa-code"></i>
+                    <span>CodeHub</span>
+                </div>
+                <div class="app-item" onclick="showApp('contact'); closeSearch()">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </div>
+            </div>
+        </div>
 
-      <!-- Resume Section --> 
-      <div class="w3-padding-64 w3-content w3-text-black" id="contact">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Resume </h1>
-    <hr style="width:200px" class="w3-opacity">
-          
-      <h2>Here's a copy of my Resume:</h2>
-    <div class="w3-section">
-      <form method="get" action="Pauleene_Jordan.pdf">
-   <button class="w3-button w3-light-grey w3-padding-large w3-section center"  style="width:50%" type="submit">Download Resume</button>
-</form>
-    </div><br>
-    
-    
-    
-      
-      
-     <!-- Contact Section --> 
-      <div class="w3-padding-64 w3-content w3-text-black" id="contact">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Contact </h1>
-    <hr style="width:200px" class="w3-opacity">
-          
-      <h2>Let's get in touch. Send me a message:</h2>
-    <div class="w3-section">
-      <h3><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Lawrence Township, NJ</h3>
-      <h3><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +908-335-5024</h3>
-        <h3><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: pauleenejordan@icloud.com</h3>
-    </div><br>
-    
+        <!-- Time and Calendar Widget -->
+        <div class="widget-container">
+            <div class="time-widget">
+                <div class="time-display" id="time-display">9:41</div>
+                <div class="date-display" id="date-display">Wed, Mar 12</div>
+            </div>
+        </div>
 
-    
-  <!-- End Contact Section -->
-  </div>
-  
-<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-  
- <!-- End footer -->
-</footer>
+        <!-- Home Screen -->
+        <div class="screen active" id="home-screen">
+            <div class="desktop-grid">
+                <div class="app-icon" data-app="workedin">
+                    <div class="icon-circle workedin">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p>WorkedIn</p>
+                </div>
+                <div class="app-icon" data-app="picstagram">
+                    <div class="icon-circle picstagram">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <p>Picstagram</p>
+                </div>
+                <div class="app-icon" data-app="codehub">
+                    <div class="icon-circle codehub">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <p>CodeHub</p>
+                </div>
+                <div class="app-icon" data-app="contact">
+                    <div class="icon-circle contact">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <p>Contact</p>
+                </div>
+            </div>
+        </div>
 
-<!-- END PAGE CONTENT -->
-</div>
+        <!-- WorkedIn App Window -->
+        <div class="screen" id="workedin-screen">
+            <div class="app-window">
+                <div class="app-titlebar">
+                    <button class="close-btn" onclick="goHome()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h3>WorkedIn Profile</h3>
+                    <div></div>
+                </div>
+                <!-- App Window Bubbles -->
+                <div class="app-bubble app-bubble1"></div>
+                <div class="app-bubble app-bubble2"></div>
+                <div class="app-bubble app-bubble3"></div>
+                <div class="app-bubble app-bubble4"></div>
+                <div class="app-bubble app-bubble5"></div>
+                <div class="app-bubble app-bubble6"></div>
+                <div class="app-content workedin-content">
+                    <div class="profile-card">
+                        <div class="profile-bg"></div>
+                        <div class="profile-info">
+                            <img src="me.jpeg" alt="Pauleene Jordan" class="profile-pic">
+                            <h2>Pauleene Jordan</h2>
+                            <p class="headline">Software Engineer | Full-Stack Developer</p>
+                            <p class="location">
+                                <i class="fas fa-map-marker-alt"></i> Philippines to the World
+                            </p>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="stat-number">500+</span>
+                                    <span class="stat-label">Connections</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">25+</span>
+                                    <span class="stat-label">CodeHub</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="feed-post">
+                        <h3>About</h3>
+                        <p>Software Engineer with experience designing and delivering scalable full-stack applications and data platforms in cloud environments. Proven ability to build modern web applications using Angular, React, and TypeScript while developing backend microservices in Python and Java that process large-scale financial datasets. Experienced working with AWS services including ECS, EC2, Lambda, S3, DynamoDB, and SageMaker to deploy and maintain systems supporting millions of records and high-volume API transactions. Skilled in SQL optimization, data pipelines, and building internal analytics tools that enable business decision-making. Known for collaborating cross-functionally with engineers, product teams, and stakeholders while leading production releases and maintaining reliable enterprise systems.💗</p>
+                    </div>
+
+                    <div class="feed-post">
+                        <h3>Education</h3>
+                        <p><strong>Bachelor's Degree in Computer Engineering</strong></p>
+                        <p style="font-size: 12px; color: #888; margin: 3px 0;">Minor in Computer Science</p>
+                        <p style="font-size: 12px; color: #888; margin: 5px 0;">Rutgers University, New Brunswick, NJ</p>
+                    </div>
+
+                    <div class="feed-post">
+                        <h3>Work Experience</h3>
+                        
+                        <div class="experience-item">
+                            <img src="assets/FannieMae.png" alt="Fannie Mae" class="company-logo">
+                            <div class="experience-details">
+                                <p class="job-title">Software Engineer – Full Stack Developer</p>
+                                <p class="company-name">Fannie Mae</p>
+                                <p class="job-duration">Feb 2023 – Present</p>
+                                <p class="job-location">Reston, VA</p>
+                                <ul class="job-description">
+                                    <li>Built AngularJS web applications that allow internal teams to submit financial datasets through REST APIs to AWS SageMaker ML pipelines processing 50K+ loan records weekly</li>
+                                    <li>Designed reusable UI component libraries used by 5+ internal teams to interact with enterprise services</li>
+                                    <li>Developed backend Python microservices to validate and analyze datasets covering 17M+ mortgage records</li>
+                                    <li>Optimized PostgreSQL and Amazon Redshift SQL queries, improving pipeline performance by 30%</li>
+                                    <li>Deployed applications on AWS (ECS, EC2, Lambda, S3, DynamoDB) supporting thousands of API transactions daily</li>
+                                    <li>Served as Production Release Lead, coordinating deployments and release validation for large-scale systems</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <img src="assets/Johnson&Johnson.jpg" alt="Johnson & Johnson" class="company-logo">
+                            <div class="experience-details">
+                                <p class="job-title">Software Engineering Co-op</p>
+                                <p class="company-name">Johnson & Johnson</p>
+                                <p class="job-duration">Aug 2022 – Dec 2022</p>
+                                <p class="job-location">Raritan, NJ</p>
+                                <ul class="job-description">
+                                    <li>Developed React + TypeScript front-end interfaces integrated with backend APIs for hospital equipment ordering systems</li>
+                                    <li>Built reusable UI components and improved application performance while collaborating in Agile Scrum teams with designers and backend engineers</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <img src="assets/FannieMae.png" alt="Fannie Mae" class="company-logo">
+                            <div class="experience-details">
+                                <p class="job-title">Software Engineering Intern</p>
+                                <p class="company-name">Fannie Mae</p>
+                                <p class="job-duration">Jun 2022 – Aug 2022</p>
+                                <p class="job-location">Reston, VA</p>
+                                <ul class="job-description">
+                                    <li>Contributed to migrating full-stack applications to AWS, reducing operational costs by 30%</li>
+                                    <li>Implemented automated testing using Selenium and Cucumber to improve regression coverage</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <img src="assets/CapitalOne.jpg" alt="Capital One" class="company-logo">
+                            <div class="experience-details">
+                                <p class="job-title">Technology Mentee</p>
+                                <p class="company-name">Capital One</p>
+                                <p class="job-duration">Jul 2022 – Aug 2022</p>
+                                <p class="job-location">Remote</p>
+                                <ul class="job-description">
+                                    <li>Selected from 360 participants for training in cloud computing and cybersecurity</li>
+                                    <li>Built a Python application integrating external APIs as part of the program</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <img src="assets/Rutgers.png" alt="Rutgers" class="company-logo">
+                            <div class="experience-details">
+                                <p class="job-title">Cybersecurity Research Extern</p>
+                                <p class="company-name">Rutgers MBS Externship Program</p>
+                                <p class="job-duration">Sep 2021 – Dec 2021</p>
+                                <p class="job-location">New Brunswick, NJ</p>
+                                <ul class="job-description">
+                                    <li>Led a team of five researchers analyzing system and supply chain vulnerabilities</li>
+                                    <li>Built Tableau data visualizations to communicate insights and improve research efficiency by 20%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feed-post">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-container">
+                            <div class="skill-tag">AngularJS</div>
+                            <div class="skill-tag">React</div>
+                            <div class="skill-tag">TypeScript</div>
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">Java</div>
+                            <div class="skill-tag">HTML/CSS</div>
+                            <div class="skill-tag">REST APIs</div>
+                            <div class="skill-tag">AWS</div>
+                            <div class="skill-tag">PostgreSQL</div>
+                            <div class="skill-tag">Amazon Redshift</div>
+                            <div class="skill-tag">DynamoDB</div>
+                            <div class="skill-tag">Selenium</div>
+                            <div class="skill-tag">Cucumber</div>
+                            <div class="skill-tag">Tableau</div>
+                            <div class="skill-tag">Agile/Scrum</div>
+                            <div class="skill-tag">Web Design</div>
+                            <div class="skill-tag">Full-Stack Development</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Picstagram App Window -->
+        <div class="screen" id="picstagram-screen">
+            <div class="app-window">
+                <div class="app-titlebar">
+                    <button class="close-btn" onclick="goHome()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h3>Picstagram</h3>
+                    <div></div>
+                </div>
+                <!-- App Window Bubbles -->
+                <div class="app-bubble app-bubble1"></div>
+                <div class="app-bubble app-bubble2"></div>
+                <div class="app-bubble app-bubble3"></div>
+                <div class="app-bubble app-bubble4"></div>
+                <div class="app-bubble app-bubble5"></div>
+                <div class="app-bubble app-bubble6"></div>
+                <div class="app-content picstagram-content">
+                    <!-- Instagram-style Profile Section -->
+                    <div class="picstagram-profile">
+                        <div class="profile-header">
+                            <img src="me.jpeg" alt="Pauleene Adirea" class="profile-image">
+                            <div class="profile-info">
+                                <h2>pauleeneadirea</h2>
+                                <p class="bio"></p>
+                                <a href="https://www.instagram.com/pauleeneadirea/" target="_blank" class="edit-profile-btn">Visit Instagram</a>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-count">74</span>
+                                <span class="stat-label">Posts</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-count">777</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-count">973</span>
+                                <span class="stat-label">Following</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Photo Grid -->
+                    <div class="picstagram-grid">
+
+                    <!-- Hawaii -->
+                    <div class="picstagram-item"><img src="Worldgram/Hawaii/Hawaii.png" alt="Hawaii"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Hawaii/Hawaii2.png" alt="Hawaii"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Hawaii/Hawaii3.png" alt="Hawaii"></div>
+
+                    <!-- Italy -->
+                    <div class="picstagram-item"><img src="Worldgram/Italy/Italy1.png" alt="Italy"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Italy/Italy2.png" alt="Italy"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Italy/Italy3.png" alt="Italy"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Italy/Italy4.png" alt="Italy"></div>
+
+                    <!-- Korea -->
+                    <div class="picstagram-item"><img src="Worldgram/Korea/Korea.png" alt="Korea"></div>
+
+                    <!-- Korea2 -->
+                    <div class="picstagram-item"><img src="Worldgram/Korea2/Korea1.png" alt="Korea"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Korea2/Korea2.png" alt="Korea"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Korea2/Korea3.png" alt="Korea"></div>
+
+                    <!-- Lisbon -->
+                    <div class="picstagram-item"><img src="Worldgram/Lisbon/Lisbon1.png" alt="Lisbon"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Lisbon/Lisbon2.png" alt="Lisbon"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Lisbon/Lisbon3.png" alt="Lisbon"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Lisbon/Lisbon4.png" alt="Lisbon"></div>
+
+                    <!-- Nara -->
+                    <div class="picstagram-item"><img src="Worldgram/Nara/Nara1.png" alt="Nara"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Nara/Nara2.png" alt="Nara"></div>
+
+                    <!-- Paris -->
+                    <div class="picstagram-item"><img src="Worldgram/Paris/Paris1.png" alt="Paris"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Paris/Paris2.png" alt="Paris"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Paris/Paris3.png" alt="Paris"></div>
+
+                    <!-- Spain -->
+                    <div class="picstagram-item"><img src="Worldgram/Spain/Spain1.png" alt="Spain"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Spain/Spain2.png" alt="Spain"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Spain/Spain3.png" alt="Spain"></div>
+
+                    <!-- Switzerland -->
+                    <div class="picstagram-item"><img src="Worldgram/Switzerland/Switzerland1.png" alt="Switzerland"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Switzerland/Switzerland2.png" alt="Switzerland"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Switzerland/Switzerland3.png" alt="Switzerland"></div>
+
+                    <!-- Tokyo -->
+                    <div class="picstagram-item"><img src="Worldgram/Tokyo/Tokyo.png" alt="Tokyo"></div>
+                    <div class="picstagram-item"><img src="Worldgram/Tokyo/Tokyo2.png" alt="Tokyo"></div>
+
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- CodeHub App Window -->
+        <div class="screen" id="codehub-screen">
+            <div class="app-window">
+                <div class="app-titlebar">
+                    <button class="close-btn" onclick="goHome()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h3>CodeHub</h3>
+                    <div></div>
+                </div>
+                <!-- App Window Bubbles -->
+                <div class="app-bubble app-bubble1"></div>
+                <div class="app-bubble app-bubble2"></div>
+                <div class="app-bubble app-bubble3"></div>
+                <div class="app-bubble app-bubble4"></div>
+                <div class="app-bubble app-bubble5"></div>
+                <div class="app-bubble app-bubble6"></div>
+                <div class="app-content codehub-content">
+                    <div class="project-card">
+                        <h4>Chess Game</h4>
+                        <p>A full-featured chess application built with Java.</p>
+                        <a href="https://github.com/pauleenejordan/ChessGame" target="_blank">View on GitHub →</a>
+                    </div>
+                    <div class="project-card">
+                        <h4>Photo Albums</h4>
+                        <p>An Android application for managing photo albums.</p>
+                        <a href="https://github.com/pauleenejordan/Android--Photo-Albums" target="_blank">View on GitHub →</a>
+                    </div>
+                    <div class="project-card">
+                        <h4>Song Library</h4>
+                        <p>A music library management system with advanced features.</p>
+                        <a href="https://github.com/pauleenejordan/SongLibrary" target="_blank">View on GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact App Window -->
+        <div class="screen" id="contact-screen">
+            <div class="app-window">
+                <div class="app-titlebar">
+                    <button class="close-btn" onclick="goHome()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <h3>Contact</h3>
+                    <div></div>
+                </div>
+                <!-- App Window Bubbles -->
+                <div class="app-bubble app-bubble1"></div>
+                <div class="app-bubble app-bubble2"></div>
+                <div class="app-bubble app-bubble3"></div>
+                <div class="app-bubble app-bubble4"></div>
+                <div class="app-bubble app-bubble5"></div>
+                <div class="app-bubble app-bubble6"></div>
+                <div class="app-content contact-content">
+                    <a href="mailto:pauleenejordan@icloud.com" style="text-decoration: none; color: inherit;">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <p>pauleenejordan@icloud.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pauleene-adirea-jordan/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="contact-card">
+                            <i class="fas fa-briefcase"></i>
+                            <h4>WorkedIn</h4>
+                            <p>linkedin.com/in/pauleene-adirea-jordan</p>
+                        </div>
+                    </a>
+                    <a href="Pauleene_Jordan.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="contact-card">
+                            <i class="fas fa-file-pdf"></i>
+                            <h4>Resume</h4>
+                            <p>View My Resume</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
